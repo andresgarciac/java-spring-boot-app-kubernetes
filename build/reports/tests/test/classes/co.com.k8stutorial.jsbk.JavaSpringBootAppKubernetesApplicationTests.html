@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - JavaSpringBootAppKubernetesApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>JavaSpringBootAppKubernetesApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/co.com.k8stutorial.jsbk.html">co.com.k8stutorial.jsbk</a> &gt; JavaSpringBootAppKubernetesApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.327s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.327s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>15:32:16.208 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:32:16.215 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:32:16.241 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [co.com.k8stutorial.jsbk.JavaSpringBootAppKubernetesApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:32:16.248 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [co.com.k8stutorial.jsbk.JavaSpringBootAppKubernetesApplicationTests], using SpringBootContextLoader
+15:32:16.251 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [co.com.k8stutorial.jsbk.JavaSpringBootAppKubernetesApplicationTests]: class path resource [co/com/k8stutorial/jsbk/JavaSpringBootAppKubernetesApplicationTests-context.xml] does not exist
+15:32:16.251 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [co.com.k8stutorial.jsbk.JavaSpringBootAppKubernetesApplicationTests]: class path resource [co/com/k8stutorial/jsbk/JavaSpringBootAppKubernetesApplicationTestsContext.groovy] does not exist
+15:32:16.251 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [co.com.k8stutorial.jsbk.JavaSpringBootAppKubernetesApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:32:16.252 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [co.com.k8stutorial.jsbk.JavaSpringBootAppKubernetesApplicationTests]: JavaSpringBootAppKubernetesApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:32:16.280 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [co.com.k8stutorial.jsbk.JavaSpringBootAppKubernetesApplicationTests]
+15:32:16.322 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/andres/Kubernetes course/java-spring-boot-app-kubernetes/build/classes/java/main/co/com/k8stutorial/jsbk/JavaSpringBootAppK8sApp.class]
+15:32:16.323 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration co.com.k8stutorial.jsbk.JavaSpringBootAppK8sApp for test class co.com.k8stutorial.jsbk.JavaSpringBootAppKubernetesApplicationTests
+15:32:16.387 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [co.com.k8stutorial.jsbk.JavaSpringBootAppKubernetesApplicationTests]: using defaults.
+15:32:16.388 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:32:16.395 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+15:32:16.395 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+15:32:16.395 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@52045dbe, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@674658f7, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5c8eee0f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@565b064f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@26425897, org.springframework.test.context.support.DirtiesContextTestExecutionListener@73163d48, org.springframework.test.context.event.EventPublishingTestExecutionListener@58c34bb3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@56a4479a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@62163b39, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@20a8a64e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@62f4ff3b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@1698fc68, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4504d271]
+15:32:16.398 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3e5499cc testClass = JavaSpringBootAppKubernetesApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@67ab1c47 testClass = JavaSpringBootAppKubernetesApplicationTests, locations = '{}', classes = '{class co.com.k8stutorial.jsbk.JavaSpringBootAppK8sApp}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@4196c360, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@768fc0f2, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3f67593e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@14bee915, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1e44b638, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@38afe297], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.6)
+
+2022-04-06 15:32:16.617  INFO 577285 --- [    Test worker] aSpringBootAppKubernetesApplicationTests : Starting JavaSpringBootAppKubernetesApplicationTests using Java 17.0.2 on andres-pc with PID 577285 (started by andres in /home/andres/Kubernetes course/java-spring-boot-app-kubernetes)
+2022-04-06 15:32:16.618  INFO 577285 --- [    Test worker] aSpringBootAppKubernetesApplicationTests : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-04-06 15:32:17.677  INFO 577285 --- [    Test worker] aSpringBootAppKubernetesApplicationTests : Started JavaSpringBootAppKubernetesApplicationTests in 1.253 seconds (JVM running for 2.149)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at Apr 6, 2022, 3:32:18 PM</p>
+</div>
+</div>
+</body>
+</html>

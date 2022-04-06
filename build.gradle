@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.6.6'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id 'application'
 }
 
 group = 'co.com.k8s-tutorial'
@@ -28,3 +29,5 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+mainClassName = 'co.com.k8stutorial.jsbk.JavaSpringBootAppK8sApp'
