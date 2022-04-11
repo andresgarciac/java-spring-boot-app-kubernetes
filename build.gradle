@@ -3,11 +3,29 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 	id 'application'
+	id 'com.google.cloud.tools.jib' version '3.2.1'
 }
+
+jib {
+	from {
+		image = 'openjdk:8-jdk-alpine'
+	}
+	to {
+		image = 'registry.hub.docker.com/agarcia/sb-java-app:latest'
+	}
+	container {
+		jvmFlags = ['-Xms512m', '-Xdebug']
+		mainClass = 'co.com.k8stutorial.jsbk.JavaSpringBootAppK8sApp'
+		args = []
+		ports = ['8080/tcp']
+	}
+}
+
+jib.to.image = 'agarcia/sb-java-app'
 
 group = 'co.com.k8s-tutorial'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = '8'
 
 configurations {
 	compileOnly {
