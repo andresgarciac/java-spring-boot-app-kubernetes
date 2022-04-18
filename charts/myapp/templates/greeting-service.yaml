@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: k8stest
+  labels:
+    name: k8stestapp
+spec:
+  selector:
+    app: k8stestapp
+  ports:
+  - name: http
+    protocol: TCP
+    port: {{ .Values.service.externalPort }}
+    targetPort: {{ .Values.service.internalPort }}
+  - name: debug
+    protocol: TCP
+    port: {{ .Values.service.externalDebugPort }}
+    targetPort: {{ .Values.service.internalDebugPort }}
+  type: LoadBalancer

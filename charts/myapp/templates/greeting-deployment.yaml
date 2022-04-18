@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8stestapp-deployment
+  labels:
+    app: k8stestapp
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: k8stestapp
+  template:
+    metadata:
+      labels:
+        app: k8stestapp
+    spec:
+      containers:
+      - name: sb-java-app
+        image: {{ .Values.greeting.image }}:{{ .Values.image.tag }}
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        ports:
+        - containerPort: {{ .Values.service.internalPort }}
+          name: "http"
+        - containerPort: {{ .Values.service.internalDebugPort }}
+          name: "debug"
